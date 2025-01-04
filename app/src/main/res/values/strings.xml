@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FoodOrderingApp</string>
+    <string name="geeksforgeeks_firebase_authentication" />
+</resources>

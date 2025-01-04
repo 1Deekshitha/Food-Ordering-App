@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo3"
+        android:scaleType="centerCrop"
+        android:contentDescription="App Logo"
+        android:clipToOutline="true"
+        android:outlineProvider="background"
+        android:backgroundTint="#FFFFFF" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImage"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to AAHARA"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#F84E44"
+        android:shadowColor="#80000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="6"
+        android:fontFamily="monospace" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:shadowColor="#80434242"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="6"
+        android:text="Savor the Flavor at Your Fingertips!"
+        android:textColor="#121111"
+        android:textSize="19sp" />
+
+
+    <!-- Menu Button -->
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="MENU"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#F44A3D"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp" />
+
+    <!-- View Orders Button -->
+    <Button
+        android:id="@+id/viewOrdersButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="VIEW ORDERS"
+        android:layout_below="@id/menuButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#F44D41"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp" />
+
+</RelativeLayout>
